@@ -1,0 +1,99 @@
+.home {
+    background-color: #fafafa;
+}
+
+.navbar {
+    border-bottom: 1px solid #cccc;
+}
+
+.mt-76 {
+    margin-top: 76px;
+}
+
+.logo {
+    height: 50px;
+}
+
+.jumbo-cover {
+    background: url(http://i66.tinypic.com/28am9fs.jpg);
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto auto;
+    background-color: rgba(0, 0, 0, 0);
+    background-size: auto auto;
+    color: #fff;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.Card {
+    margin-top: 24px;
+    color: #212529;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: .25rem;
+}
+
+.card:hover {
+    webkit-box-shadow: 0 28px 36px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 28px 36px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22);
+    color: #000;
+    cursor: pointer;
+}
+
+.small {
+    color: #6c757d;
+    font-size: 80%;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.card-author:hover {
+    color: #a6a6a6;
+    text-decoration: none;
+}
+
+.card-author {
+    color: #6c757d;
+    text-decoration: none;
+}
+
+.box-shadow {
+    -webkit-box-shadow: 0 .25rem .75rem rgba(0,0,0,.05);
+    box-shadow: 0 .25rem .75rem rgba(0,0,0,.05);
+}
+
+.box {
+    border: 1px solid #e7e7e7;
+}
+
+.box-green {
+    background-color: #0bc72a;
+    color: #fff;
+}
+
+.box-white {
+    background-color: #ffff;
+}
+
+.footer {
+    margin-top: 36px;
+    border-top: 1px solid rgb(231, 231, 231);
+    padding: 20px;
+    left: 0px;
+    bottom: 0px;
+    height: 60px;
+    width: 100%;
+    color: rgb(108, 117, 125);
+    background-color: #fff;
+}

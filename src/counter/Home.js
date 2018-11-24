@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Row, Col, Container, Button } from 'reactstrap';
-import Header from '../components/Header';
 import Jumbotron from '../components/Jumbotron';
 import Card from '../components/Card';
 import Content from '../components/Content';
@@ -11,7 +10,6 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Header />
                 <Jumbotron />
                 <Container className="text-center">
                     <Row>

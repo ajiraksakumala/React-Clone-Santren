@@ -3,26 +3,24 @@ import Home from './counter/Home';
 import Mondok from './counter/Mondok';
 import Kitab from './counter/Kitab';
 import Kajian from './counter/Kajian';
+import NotFound from './counter/NotFound';
 import Header from './components/Header';
+import { Route, Switch } from 'react-router-dom';
 // import logo from './logo.svg';
 // import './App.css';
 
 class App extends Component {
-  state = {
-    page : 'Home'
-  }
-
-  handlePage = (param) => {
-    this.setState({
-      page : param
-    });
-  }
-
   render() {
     return(
     <div>
-      <Header link={ this.handlePage }/>
-    {this.state.page == 'Home' ? (<Home />) : this.state.page == 'Kajian' ? (<Kajian />) : this.state.page == 'Mondok' ? (<Mondok />) : this.state.page == 'Kitab' ? (<Kitab />) : "<h1>Page Not Found</h1>"}
+      <Header />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/Kajian" component={Kajian} />
+        <Route path="/Mondok" component={Mondok} />
+        <Route path="/Kitab" component={Mondok} />
+        <Route component={NotFound} />
+      </Switch>
     </div>
     );
   }

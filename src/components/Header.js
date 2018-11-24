@@ -9,6 +9,8 @@ import {
   NavLink,
   Button } from 'reactstrap';
 import '../assets/App.css';
+import { Link } from 'react-router-dom';
+
 
 export default class Example extends React.Component {
   constructor(props) {
@@ -30,22 +32,24 @@ export default class Example extends React.Component {
         <div>
           <div>
             <Navbar color="light" light expand="md" toggleable={`md`} fixed={'top'} >
-              <NavbarBrand onClick={ ()=>this.props.link("Home") }><img className="logo" src="http://i63.tinypic.com/oid9xu.png"/></NavbarBrand>
-              <NavbarBrand onClick={ ()=>this.props.link("Home") }>Santren Koding</NavbarBrand>
+              <NavbarBrand href="/"><img className="logo" src="http://i63.tinypic.com/oid9xu.png"/></NavbarBrand>
+              <NavbarBrand href="/">Santren Koding</NavbarBrand>
               <NavbarToggler onClick={this.toggle} />
               <Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="ml-auto text-center" navbar>
                   <NavItem>
-                    <NavLink onClick={ ()=>this.props.link("Kajian") }>Kajian Koding</NavLink>
+                    <NavLink href="/kajian">Kajian Koding</NavLink>                    
+                  </NavItem>
+                  <NavItem>                    
+                    <NavLink href="/mondok">Mondok Koding</NavLink>                    
+                  </NavItem>
+                  <NavItem>                    
+                    <NavLink href="/kitab">Kitab Koding</NavLink>                    
                   </NavItem>
                   <NavItem>
-                    <NavLink onClick={ ()=>this.props.link("Mondok") }>Mondok Koding</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink onClick={ ()=>this.props.link("Kitab") }>Kitab Koding</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <Button outline color="primary">Masuk/Daftar</Button>
+                    <Link to="/login">
+                      <Button outline color="primary">Masuk/Daftar</Button>
+                    </Link>
                   </NavItem>
                 </Nav>
               </Collapse>

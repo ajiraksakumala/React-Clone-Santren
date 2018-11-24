@@ -18,8 +18,6 @@
     background: url(http://i66.tinypic.com/28am9fs.jpg);
     background-color: rgba(0, 0, 0, 0);
     background-size: auto auto;
-    background-color: rgba(0, 0, 0, 0);
-    background-size: auto auto;
     color: #fff;
     background-size: cover;
     min-height: 300px;
@@ -84,6 +82,10 @@
 
 .box-white {
     background-color: #ffff;
+}
+
+.desc {
+    font-size: 18px;
 }
 
 .footer {
